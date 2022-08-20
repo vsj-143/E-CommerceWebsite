@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+<title>Login</title>
+  <style>
+    .parent{
+        height:350px;
+        width:350px;
+        margin-top: 250px;
+        margin-left:600px ;
+        background-color:  rgba(95, 13, 172, 0.868);
+        border-radius: 10px;
+        
+    
+    }
+    input{
+        padding: 5px;
+        margin:20px;
+        width:80%;
+    }
+    input[type=submit]{
+        height: 50px;
+        width:100px;
+        margin-left: 110px;
+        margin-top: 10px;
+    }
+    .login{
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        text-align: center;
+        /* background-color: ; */
+        height: 55px;
+        border-radius: 10px;
+        
+
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    .account{
+        margin-left: 20px;
+    }
+    </style>
+
+</head>
+<body>
+<div class="parent" >
+    <div class="login"><h1>Login</h1></div>
+<form action="login.php" method="post">
+    <!-- <div ><input type="text"  name="name" placeholder="Enter The Name"></br> -->
+<div ><input type="email"  name="email1" placeholder="Enter The E-Mail"></br>
+    <div><input type="password"  name="password1" placeholder=" Enter The Password" ></div>
+    <div class="d-flex account"><h6>Don't have an account?</h6><a href="reg.html"><h6>sign up</h5></a></div>
+        <div><input type="submit" name="submit" value="login" class="form-control btn btn-outline-primary"></div>
+</form>
+</div>
+</body>
+</html>
